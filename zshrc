@@ -1,3 +1,10 @@
+plugins=(
+	git
+	colored-man-pages
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -22,6 +29,7 @@ alias gfs="git flow feature start"
 alias gff="git flow feature finish"
 alias cdp='composer dump -o'
 alias gac="git add . && git commit -m"
+alias a="php artisan"
 
 chmodf() {
         find $2 -type f -exec chmod $1 {} \;
@@ -47,3 +55,4 @@ alias php7.3='sudo a2dismod php5.6 && sudo a2dismod php7.2 && sudo a2dismod php7
 alias php7.4='sudo a2dismod php5.6 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php8.0 && sudo a2dismod php8.1 && sudo a2enmod php7.4 && sudo update-alternatives --set php /usr/bin/php7.4 && sudo service apache2 restart'
 alias php8.0='sudo a2dismod php5.6 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2enmod php8.0 && sudo a2dismod php8.1 && sudo update-alternatives --set php /usr/bin/php8.0 && sudo service apache2 restart'
 alias php8.1='sudo a2dismod php5.6 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2dismod php8.0 && sudo a2enmod php8.1 && sudo update-alternatives --set php /usr/bin/php8.1 && sudo service apache2 restart'
+alias php8.2='sudo a2dismod php5.6 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2dismod php8.0 && sudo a2dismod php8.1 && sudo a2enmod php8.2 && sudo update-alternatives --set php /usr/bin/php8.2 && sudo service apache2 restart'
